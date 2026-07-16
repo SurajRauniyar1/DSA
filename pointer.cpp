@@ -22,12 +22,27 @@ void point2(int &a){
 }
 
 int main(){
-    int a=10;
-    //cout<<a<<endl;
-   // point2(a);
-    //cout<<a;
-    int arr[]={1,2,3,4,5};
-    cout<<*arr<<endl;
-    cout<<*(arr+1)<<endl;
+//     int a=10;
+//     //cout<<a<<endl;
+//    // point2(a);
+//     //cout<<a;
+//     int arr[]={1,2,3,4,5};
+//     cout<<*arr<<endl;
+//     cout<<*(arr+1)<<endl;
+    int a =10;
+    int* ptr = &a;
+    int**ptrr=&ptr;
+    cout<<a<<endl;
+    cout<<&a<<endl;
+    cout<<ptr<<endl;
+    cout<<&ptr<<endl;
+    cout<<*ptr<<endl;
+    cout<<ptrr<<endl;
+    cout<<&ptrr<<endl;
+    cout<<*ptrr<<endl;
+    cout<<**ptrr<<endl;
+    **ptrr=20;
+    cout<<a<<endl;
+    cout<< *(&a);
     return 0;
 }
